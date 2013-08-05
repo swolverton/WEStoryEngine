@@ -1,0 +1,228 @@
+
+.fct-tooltip {
+	display:block;
+	min-height:150px;
+	width:330px;
+	z-index:120;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	
+	background-color:white;
+}
+
+.fct-tooltip {
+	display:block;
+	-moz-box-shadow: 0 1px 12px #cecece;
+	-webkit-box-shadow: 0 1px 12px #cecece;
+	box-shadow: 0 1px 12px #cecece;
+
+	border:1px solid;
+	border-color: #cecece;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+/* left arrow */
+.fc-tip-left .fct-arrow-holder {
+	position:absolute;
+	left:-23px;
+	top:50%;
+}
+.fc-tip-left .fct-arrow,
+.fc-tip-left .fct-arrow-border {
+/*	border-color: transparent transparent #F5F5F5;*/
+    border-color: transparent #CECECE transparent transparent;
+	border-style: solid;
+    border-width: 12px;
+    cursor: pointer;
+    font-size: 0;
+    left: 0;
+    line-height: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    z-index: 19;
+}
+.fc-tip-left .fct-arrow {
+	border-color: transparent #ffffff transparent transparent;
+    left: 0;
+	top:-12px;
+    right: auto;
+	z-index:21;
+}
+.fc-tip-left .fct-arrow-border {
+	border-color: transparent #cecece transparent transparent;
+    left: -1px;
+    top: -12px;
+    border-style: solid;
+    border-width: 12px;
+    z-index: 18;	
+	margin:0;
+}
+
+/* right arrow */
+.fc-tip-right .fct-arrow-holder {
+	position:absolute;
+	top:50%;
+	left:330px;/*x*/
+}
+.fc-tip-right .fct-arrow,
+.fc-tip-right .fct-arrow-border {
+    border-color: transparent transparent transparent #CECECE ; /*x*/
+	border-style: solid;
+    border-width: 12px;
+    cursor: pointer;
+    font-size: 0;
+    left: 0;
+    line-height: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    z-index: 19;
+}
+.fc-tip-right .fct-arrow {
+	border-color: transparent transparent transparent #ffffff; /*x*/
+    right: 0;/*x*/
+	top:-12px;
+    right: auto;
+	z-index:21;
+}
+.fc-tip-right .fct-arrow-border {
+	border-color: transparent transparent transparent #cecece;/*x*/
+    right: 1px; /*x*/
+    top: -12px;
+    border-style: solid;
+    border-width: 12px;
+    z-index: 18;	
+	margin:0;
+}
+
+/* */
+.fct-main {
+	padding:0 9px;
+	text-align:left;
+}
+
+/* header */
+.fct-header {
+	
+}
+
+.fct-header .fc-title {
+	font-weight:bold;
+	line-height:18px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	font-size:15px;
+}
+
+.fc-term-venue-gaddress {
+	font-size:13px;
+}
+
+.fct-header label:after {
+	content:":";
+}
+
+.fct-header label {
+	margin-right:5px;
+	font-weight:bold;
+}
+
+
+/* close button */
+.fc-close-tooltip {
+	position:absolute;
+	top:-14px;
+	right:-14px;
+	width:41px;
+	height:42px;
+}
+.fc-close-tooltip a {
+	display:block;
+	width:41px;
+	height:42px;
+	background: url('images/close.png') no-repeat scroll 0 -42px transparent;
+}
+.fc-close-tooltip a:hover {
+	background-position:0 0;
+}
+
+/* body */
+.fct-body {
+
+}
+.fc-start label:after,
+.fct-body .tax-label:after,
+.fc-end label:after {
+	content:":";
+}
+
+.fc-start label,
+.fct-body .tax-label,
+.fc-end label {
+	margin-right:5px;
+	font-weight:bold;
+}
+
+.fc-start,
+.fc-end,
+.fc-tax-venue {
+	font-size:13px;
+	margin-bottom: 4px;
+}
+
+.fct-body .fc-image a img {
+	float: right;
+	padding: 4px;
+	border: 1px solid #F2F2F2;
+	margin: 5px 0 5px 5px;
+	max-width:150px;
+}
+
+.fct-body .fc-description {
+	font-size:12px;
+	margin-bottom:6px;
+	margin-top:10px;
+	line-height:normal
+}
+
+/* footer */
+.fct-header {
+	
+}
+
+/* address line */
+.fc-term-venue-gaddress {
+	display:none;
+	margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 540px) {
+.fct-tooltip {
+	width:220px;
+}
+
+.fct-body .fc-image a img {
+	float: none;
+	padding: 4px;
+	border: 1px solid #F2F2F2;
+	margin: 0 auto;
+}
+}
+
+/* a separator when using multiple taxonomies, ie: multiple venues on a single event*/
+.rhc-tooltip.tax-term-divider:after,
+.rhc-event-list.tax-term-divider:after {
+content: " ";
+display:inline-block;
+width:10px;
+}

@@ -1,0 +1,21 @@
+
+
+/* events meta */
+.rhc-interval-label {
+	margin-bottom:7px;
+}
+
+.rhc-interval-option {
+	margin-left:7px;
+}
+
+label[for=rhc-date-start],
+label[for=rhc-date-end] {
+	display:block;
+	width:250px;
+}
+
+input.rhc_date_start,
+input.rhc_date_end {
+	width:250px;
+}

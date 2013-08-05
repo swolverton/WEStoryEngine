@@ -1,0 +1,190 @@
+/*  Calendar Header  */
+.fullCalendar table.fc-header {
+margin:0;
+padding:0;
+border:0px;
+border-collapse:collapse;
+border-spacing:0;
+}
+
+.fullCalendar .fc-header-title h2 {
+margin: 0px;
+}
+
+/* div based header */
+.fc-header-row {
+	position:relative;
+	text-align:center;
+}
+
+.fc-header-left {
+	position:relative;
+	float:left;
+	width:auto;
+}
+
+.fc-header-right {
+	position:relative;
+	width:auto;
+	float:right;
+}
+
+.fc-header-cell {
+	display:inline-block;
+	position:relative;
+}
+
+
+/*  Content  */
+.fc-button.fc-button-prevYear, 
+.fc-button.fc-button-prev, 
+.fc-button.fc-button-next, 
+.fc-button.fc-button-nextYear {
+font-family: 'Courier New';
+}
+
+.fullCalendar td.fc-day {
+padding: 6px 1px 6px 0;
+}
+
+.fc-grid .fc-day-content {
+padding: 2px 0px 1px 1px;
+}
+
+.rhcalendar.not-widget .fc-view-month.fc-grid .fc-day-number {
+margin-right: 10px;
+}
+
+/*  Calendar Footer */
+.fc-footer {
+margin: 20px 0 0;
+}
+
+#rhc-icalendar-modal textarea {
+width: 97%;
+}
+
+p.rhc-icalendar-description {
+margin-top: 10px;
+}
+
+/* PopUp */
+.fc-description img {
+width: 97%;
+}
+@media only screen and (max-width: 640px) {
+	.fc-header-center {
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+@media only screen and (max-width: 481px) {
+	.fc-header-row {
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.fullCalendar .fc-header-left .fc-button-rhc_search {
+		display: block;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius:0px;
+		padding: 10px 0;
+		margin: 0 1px -1px;
+	}
+	
+	.fc-header-space {
+		display: none;
+	}
+	
+	.fc-button.fc-button-prevYear, 
+	.fc-button.fc-button-prev, 
+	.fc-button.fc-button-next, 
+	.fc-button.fc-button-nextYear {
+		padding: 10px 0;
+		border-radius: 0px;
+		width: 24.5%;
+		margin-bottom: -1px;
+	}
+	
+	.fullCalendar .fc-header-left .fc-button-today {
+		border-radius: 0px;
+		padding: 10px 0;
+		display:block;
+		margin: 0px 1px -1px;
+	}
+	
+	.fc-header .fc-header-center {
+		margin: 0px auto 20px;
+		display: block;
+		width: 100%;
+		text-align:center;
+		}
+	
+	.fc-header .fc-header-left {
+		margin: 0px auto 0;
+		display: block;
+		text-align:center;
+		float:none;
+	}
+		
+	.fc-header .fc-header-right {
+		float: none;
+		margin: 0 3px 10px 1px;
+		text-align:center;
+		display:block;
+	}
+	
+	.fc-header-right .fc-button {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-mox-border-radius: 0x;
+		padding: 10px 0;
+	}
+	 /* Filter Box */
+	.fbd-main-holder {
+		height: 100%;
+		width: 100%;
+		display: block;
+		opacity: 1;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 9999999;
+		bottom: 0;
+	}
+	
+	.fbd-ul li.fbd-tabs {
+		margin: 0 10px 0 8px;
+	}
+	
+	.fbd-tabs-panel {
+		max-height: 200px;
+		overflow: scroll;
+	}
+	
+	.fbd-body .fbd-dialog-controls input[type="button"] {
+		width: 100%;
+		float: none;
+		padding: 15px 0;
+		font-size: 14px;
+	}
+}
+
+/* bug fix: some themes give this elements a position:relative that break event positioning within the calendar views. */
+.fc td,
+.fc th,
+.fc td div, 
+.fc th div
+{
+	position:static;
+}

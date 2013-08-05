@@ -1,0 +1,68 @@
+.letter-filters {
+margin-bottom:10px;
+}
+.rhcss-isotope-item {
+	background: white;
+	padding: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #E3E3E3;
+	-webkit-border-radius: 3px;
+	 -khtml-border-radius: 11px;
+	   -moz-border-radius: 3px;
+		    border-radius: 3px;	   
+	min-width:200px;
+	min-height: 100px;
+	max-width:250px;
+	-webkit-box-shadow: inset 0 1px 0 white, inset 0 0 20px rgba(0, 0, 0, 0.05), 0 1px 2px rgba( 0, 0, 0, 0.1 );
+	   -moz-box-shadow: inset 0 1px 0 #fff, inset 0 0 20px rgba(0,0,0,0.05), 0 1px 2px rgba( 0,0,0,0.1 );
+	        box-shadow: inset 0 1px 0 white, inset 0 0 20px rgba(0, 0, 0, 0.05), 0 1px 2px rgba( 0, 0, 0, 0.1 );	
+}
+
+.font-control {
+float:right;
+}
+
+.font-title {
+clear: both;
+}
+
+.rhcss input[type="text"] {
+height:30px;
+}
+
+.wf-loading .google-font-preview {
+	font-family: serif;
+}
+
+.control-search {
+	width:200px;
+	display:block;
+}
+
+.control-google-preview {
+	width:300px;
+	display:block;
+}
+
+.preview-control {
+	display:inline-block;
+	
+}
+
+.control-google-preview label {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.row-fluid {
+	margin:0;
+}
+
+.rhcss .pagination.letter-filters {
+	margin:2px 0 5px 0;
+}
+
+.control-alt-font {
+	margin:10px 0 0 0;
+}
