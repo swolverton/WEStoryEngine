@@ -26,17 +26,17 @@ function venue_html_description_input($tab,$i,$o,$r){
 		require 'venue_meta_fields.php';    
 		
 		$labels = array(
-					'name' 				=> __( 'Venues', 'rhc' ),
-					'singular_name' 	=> __( 'Venue', 'rhc' ),
-					'search_items' 		=> __( 'Search Venue', 'rhc' ),
-					'popular_items' 	=> __( 'Popular Venue', 'rhc' ),
-					'all_items' 		=> __( 'All venues', 'rhc' ),
+					'name' 				=> __( 'Status', 'rhc' ),
+					'singular_name' 	=> __( 'Status', 'rhc' ),
+					'search_items' 		=> __( 'Search Status', 'rhc' ),
+					'popular_items' 	=> __( 'Popular Status', 'rhc' ),
+					'all_items' 		=> __( 'All Status', 'rhc' ),
 					'parent_item' 		=> null,
 					'parent_item_colon' => null,
-					'edit_item' 		=> __( 'Edit venue', 'rhc' ), 
-					'update_item' 		=> __( 'Update venue', 'rhc' ),
-					'add_new_item' 		=> __( 'Add venue', 'rhc' ),
-					'new_item_name' 	=> __( 'New venue', 'rhc' )
+					'edit_item' 		=> __( 'Edit Status', 'rhc' ), 
+					'update_item' 		=> __( 'Update Status', 'rhc' ),
+					'add_new_item' 		=> __( 'Add Status', 'rhc' ),
+					'new_item_name' 	=> __( 'New Status', 'rhc' )
 				);
 		global $rhc_plugin;
 		new custom_taxonomy_with_meta(
